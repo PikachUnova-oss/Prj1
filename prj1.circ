@@ -102,20 +102,33 @@
       <a name="label" val="opcode"/>
       <a name="width" val="3"/>
     </comp>
-    <comp lib="0" loc="(990,410)" name="Pin">
+    <comp lib="0" loc="(920,440)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="cout"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(940,400)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="O"/>
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(990,430)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="cout"/>
-      <a name="output" val="true"/>
+    <comp lib="2" loc="(760,400)" name="Multiplexer">
+      <a name="select" val="3"/>
+      <a name="width" val="8"/>
     </comp>
-    <wire from="(260,610)" to="(710,610)"/>
+    <comp loc="(610,430)" name="EightBitAdder"/>
+    <wire from="(250,170)" to="(260,170)"/>
+    <wire from="(250,190)" to="(250,470)"/>
+    <wire from="(250,470)" to="(390,470)"/>
+    <wire from="(260,170)" to="(260,450)"/>
+    <wire from="(260,450)" to="(390,450)"/>
+    <wire from="(260,610)" to="(740,610)"/>
+    <wire from="(610,430)" to="(720,430)"/>
+    <wire from="(740,440)" to="(740,610)"/>
+    <wire from="(760,400)" to="(940,400)"/>
   </circuit>
   <circuit name="HalfAdder">
     <a name="appearance" val="logisim_evolution"/>
